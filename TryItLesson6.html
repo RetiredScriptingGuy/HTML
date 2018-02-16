@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <h2>Patient's last heart rate</h2>
+    <meter min="0" max="100" value="50"></meter>
+    <h2>Patient's new heart rate</h2>
+    <range min="0" max="200" value="60"></range>
+    <div id="contactDetails">
+         <form method="post">
+            <div class="formRow">
+                <label for="contactName">Contact name</label>
+                <input name="contactName" id="contactName" type="text" />
+            </div>
+            <div class="formRow">
+                <label for="phoneNumber">Phone number</label>
+                <input name="phoneNumber" id="phoneNumber" type="text" />
+            </div>
+            <div class="formRow">
+                <label for="emailAddress">Email address</label>
+                <input name="emailAddress" id="emailAddress" type="text" />
+            </div>
+            <div class="formRow">
+                <label for="companyName">Company name</label>
+                <select name="companyName" id="companyName">
+                    <option value="-1">Please select</option>
+                    <option value="1">ABC Incorporated</option>
+                    <option value="2">XZY Ltd</option>
+                    <option value="3">ACME iInternational</option>
+                </select>
+            </div>
+            <div class="formRow">
+                <label for="notes">Notes</label>
+                <textarea cols="40" rows="6" name="notes"></textarea>
+            </div>
+            <div class="formRow">
+                <input style="width:70px" type="submit" value="Save" />
+            </div>
+            <div class="formRow">
+                <label for="lastContacted">Last contacted</label>
+                <input name="lastContacted" id="lastContacted" type="date" />
+            </div>
+            <div class="formRow">
+                <input list="companies" name="companyName">
+                <datalist id="companies">
+                    <option value="ABC Incorporated">
+                    <option value="XZY Ltd">
+                    <option value="ACME iInternational">
+                </datalist>
+            </div>
+        </form>
+     </div>
+</body>
+</html>
